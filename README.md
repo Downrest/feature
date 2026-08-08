@@ -6,7 +6,7 @@ The tool reads a `feature.toml` file which includes references to the preferred 
 
 ## Download
 
-Rokit:
+Rokit via `rokit.toml`:
 ```toml
 feature = "Downrest/feature@1.0.0"
 ```
