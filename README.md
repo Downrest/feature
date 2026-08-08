@@ -70,3 +70,9 @@ local Test = require(StarterPlayer.StarterPlayerScripts.GameClient.Microgame.Mic
 
 Test.Init()
 ```
+
+## Extra Notes
+If you're using Azul, push the newly created files into actual Roblox Studio instances like so:
+```sh
+azul push --source sync/StarterPlayer/StarterPlayerScripts/GameClient --destination /StarterPlayer/StarterPlayerScripts/GameClient
+```
