@@ -1,6 +1,6 @@
 # Feature
 
-Personal tool for creating features in my architecture. 
+Personal CI tool for creating "features" in my Roblox architecture. 
 
 The tool reads a `feature.toml` file which includes references to the preferred paths and services for client/server features.
 
