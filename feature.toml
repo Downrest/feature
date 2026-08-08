@@ -1,2 +1,5 @@
-client = "src"
-server = "src"
+client_path = "test/StarterPlayer/StarterPlayerScripts/"
+client_service = "StarterPlayer"
+
+server_path = "test/ServerScriptService/"
+server_service = "ServerScriptService"
