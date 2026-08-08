@@ -2,7 +2,6 @@ use std::{fs, path::Path};
 use clap::{CommandFactory, Parser, error::ErrorKind};
 use serde::Deserialize;
 
-/// Search for a command in a file and display the lines that contain it.
 #[derive(Parser)]
 struct Cli {
     command: String,
