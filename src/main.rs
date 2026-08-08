@@ -106,16 +106,14 @@ fn main() {
     
                 luau_path = file_path[index..].replace("/", ".");
             }
-            handler_content = String::from(
-                format!(
-                    "local StarterPlayer = game:GetService(\"StarterPlayer\")\n\
-                    \n\
-                    local {service_name} = require({luau_path}{service_name}.{service_name}ClientController)\n\
-                    \n\
-                    {service_name}.Init()\n\
-                    "
-                )
-            );
+            handler_content = format!(
+                "local StarterPlayer = game:GetService(\"StarterPlayer\")\n\
+                \n\
+                local {service_name} = require({luau_path}{service_name}.{service_name}ClientController)\n\
+                \n\
+                {service_name}.Init()\n\
+                "
+            )
         } else if command == "server" {
             tag = String::from("Server");
             file_path = server_path;
@@ -133,16 +131,14 @@ fn main() {
     
                 luau_path = file_path[index..].replace("/", ".");
             }
-            handler_content = String::from(
-                format!(
-                    "local ServerScriptService = game:GetService(\"ServerScriptService\")\n\
-                    \n\
-                    local {service_name} = require({luau_path}{service_name}.{service_name}ServerController)\n\
-                    \n\
-                    {service_name}.Init()\n\
-                    "
-                )
-            );
+            handler_content = format!(
+                "local ServerScriptService = game:GetService(\"ServerScriptService\")\n\
+                \n\
+                local {service_name} = require({luau_path}{service_name}.{service_name}ServerController)\n\
+                \n\
+                {service_name}.Init()\n\
+                "
+            )
         } else {
             panic!("Attempted to create feature without command!");
         }
