@@ -1,6 +1,6 @@
 # Feature
 
-Personal CI tool for creating "features" in my Roblox architecture. 
+Personal CLI tool for creating "features" in my Roblox architecture. 
 
 The tool reads a `feature.toml` file which includes references to the preferred paths and services for client/server features.
 
@@ -66,9 +66,9 @@ return MicrogameClientController
 ]]
 local StarterPlayer = game:GetService("StarterPlayer")
 
-local Test = require(StarterPlayer.StarterPlayerScripts.GameClient.Microgame.MicrogameClientController)
+local MicrogameClientController = require(StarterPlayer.StarterPlayerScripts.GameClient.Microgame.MicrogameClientController)
 
-Test.Init()
+MicrogameClientController.Init()
 ```
 
 ## Extra Notes
