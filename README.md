@@ -34,6 +34,8 @@ feature server INSERT_FEATURE_NAME
 Example of what is created with this tool:
 ```sh
 feature client Microgame
+```
+```
 |
 L> sync/StarterPlayer/StarterPlayerScripts/GameClient/Microgame
     L> MicrogameClientController.luau
