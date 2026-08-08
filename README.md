@@ -4,7 +4,14 @@ Personal CI tool for creating "features" in my Roblox architecture.
 
 The tool reads a `feature.toml` file which includes references to the preferred paths and services for client/server features.
 
-## Procedure
+## Download
+
+Rokit:
+```toml
+feature = "Downrest/feature@1.0.0"
+```
+
+## Usage
 
 Before anything, run:
 ```sh
