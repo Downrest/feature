@@ -21,7 +21,7 @@ feature init
 `feature init` creates a `feature.toml` file which the tool reads into, the syntax is as follows:
 ```toml
 # These are paths to where the features/systems will be created per boundary (client/server). Below are the paths that it defaults to:
-# !! NOTE !! It is necessary to have a "/" at the end
+# !! NOTE !! It is necessary to have a "/" at the end of the paths
 
 client_path = "sync/StarterPlayer/StarterPlayerScripts/GameClient/"
 client_service = "StarterPlayer"
