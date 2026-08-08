@@ -1,6 +1,8 @@
 # Feature
 
-Personal tool for creating features/systems in my architecture. 
+Personal tool for creating features in my architecture. 
+
+The tool reads a `feature.toml` file which includes references to the preferred paths and services for client/server features.
 
 Before anything, run:
 ```sh
@@ -44,7 +46,8 @@ function MicrogameClientController.Init()
 end
 
 return MicrogameClientController
-
+```
+```luau
 --[[
     MicrogameClientHandler.luau
 ]]
