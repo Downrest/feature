@@ -168,7 +168,7 @@ fn main() {
 
             // create ..Handler.luau
             {
-                let handler_name = format!("{service_name}ClientHandler");
+                let handler_name = format!("{service_name}{tag}Handler");
                 fs::write(
                     format!(
                         "{file_path}{service_name}/{handler_name}.{handler_suffix}.luau"
