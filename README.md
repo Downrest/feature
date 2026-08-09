@@ -72,7 +72,10 @@ MicrogameClientController.Init()
 ```
 
 ## Extra Notes
-If you're using Azul, push the newly created files into actual Roblox Studio instances like so:
+If you're using Azul, push the newly created files into actual Roblox Studio instances like so. Choose one depending on your preferred boundary (client/server).
 ```sh
 azul push --source sync/StarterPlayer/StarterPlayerScripts/GameClient --destination /StarterPlayer/StarterPlayerScripts/GameClient
+```
+```sh
+azul push --source sync/ServerScriptService/GameServer --destination /ServerScriptService/GameServer
 ```
