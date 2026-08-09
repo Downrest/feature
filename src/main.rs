@@ -20,7 +20,7 @@ struct Config {
 const CONFIG_FILE: &str = "feature.toml";
 const DEFAULT_CLIENT_PATH: &str = "sync/StarterPlayer/StarterPlayerScripts/GameClient/";
 const DEFAULT_CLIENT_SERVICE: &str = "StarterPlayer";
-const DEFAULT_SERVER_PATH: &str = "sync/ServerScriptService/GameClient/";
+const DEFAULT_SERVER_PATH: &str = "sync/ServerScriptService/GameServer/";
 const DEFAULT_SERVER_SERVICE: &str = "ServerScriptService";
 
 fn main() {
