@@ -109,9 +109,9 @@ fn main() {
             handler_content = format!(
                 "local StarterPlayer = game:GetService(\"StarterPlayer\")\n\
                 \n\
-                local {service_name} = require({luau_path}{service_name}.{service_name}ClientController)\n\
+                local {service_name}ClientController = require({luau_path}{service_name}.{service_name}ClientController)\n\
                 \n\
-                {service_name}.Init()\n\
+                {service_name}ClientController.Init()\n\
                 "
             )
         } else if command == "server" {
@@ -134,9 +134,9 @@ fn main() {
             handler_content = format!(
                 "local ServerScriptService = game:GetService(\"ServerScriptService\")\n\
                 \n\
-                local {service_name} = require({luau_path}{service_name}.{service_name}ServerController)\n\
+                local {service_name}ServerController = require({luau_path}{service_name}.{service_name}ServerController)\n\
                 \n\
-                {service_name}.Init()\n\
+                {service_name}ServerController.Init()\n\
                 "
             )
         } else {
